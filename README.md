@@ -18,7 +18,7 @@ A PyQt6-based desktop application for real-time image editing, filtering, tone c
 ## 📁 Structure
 - `imagedash_final_fixed.py`: Main PyQt6 application
 - `requirements.txt`: Python dependencies
-- `assets/`: (Optional) Sample images
+
 
 ---
 
