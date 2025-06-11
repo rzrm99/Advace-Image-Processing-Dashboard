@@ -1,24 +1,58 @@
-## 🧠 Image Processing Dashboard
+# 🧠 Image Processing Dashboard — Advanced Edition
 
-A PyQt6-based desktop application for real-time image editing, filtering, tone curve adjustment, and morphological operations.
-
----
-
-## 📊 Final Features
-- Brightness & Contrast sliders with live preview
-- RGB/Grayscale/Noise conversion
-- Real-time RGB histogram and FFT spectrum
-- Interactive tone-curve editor with draggable points
-- Custom filter kernel editor with preset examples
-- Morphological operations (Erode, Dilate, Open, Close, etc.)
-- Dark and light UI themes
+A powerful, PyQt6-based desktop application for real-time image editing, AI-powered enhancements, tone curve manipulation, and morphological operations — with a modern UI and built-in analysis tools.
 
 ---
 
-## 📁 Structure
-- `imagedash_final_fixed.py`: Main PyQt6 application
-- `requirements.txt`: Python dependencies
+## 🚀 Features
 
+### 🎛️ Image Editing
+- Load, preview, and save images (JPG/PNG)
+- Brightness & contrast sliders with instant feedback
+- Color mode switching (RGB / Grayscale)
+- Noise injection (Gaussian, Salt & Pepper, Poisson)
+- Filter effects: blur, sharpen, edge detection, Gaussian, median, bilateral
+- Custom filter kernel editor with preset examples (sharpen, emboss, edge)
+
+### 📊 Analysis & Curves
+- Real-time RGB histogram viewer
+- FFT spectrum visualizer
+- Interactive tone curve editor with draggable control points
+
+### 🧩 Morphology Tools
+- Live preview of erosion, dilation, opening, closing, gradient, etc.
+- Adjustable kernel size
+
+### 🤖 AI Toolbox
+- Built-in super-resolution (2×, 3×, 4×) using models: ESPCN, FSRCNN, LapSRN
+- Denoising via OpenCV’s fast NLM filter
+- Face detection with Haar cascades
+- Object detection with MobileNet SSD
+- Visual preview inside AI tab
+- “Reset AI Changes” to undo enhancements
+
+### 📄 Image Reporting
+- Automatic image report on load:
+  - Dimensions, channels
+  - Mean, stddev, median
+  - Unique color count
+  - Blur estimate (variance of Laplacian)
+
+### 🌗 UI & Experience
+- Fully dark-themed dashboard (light theme toggle available)
+- Responsive sidebar navigation
+- Collapsible sidebar for focused editing
+
+---
+
+## 📁 Project Structure
+
+| File / Folder             | Description                                  |
+|--------------------------|----------------------------------------------|
+| `Advance_dash.py`        | Main PyQt6 application                       |
+| `models/`                | Folder containing all AI model files (`.pb`, `.prototxt`, `.caffemodel`) |
+| `requirements.txt`       | Python dependencies                         |
+| `README.md`              | You are here                                 |
 
 ---
 
@@ -28,25 +62,6 @@ A PyQt6-based desktop application for real-time image editing, filtering, tone c
 pip install -r requirements.txt
 python Advance_dash.py
 ```
-
-
-## 📄 Source Tools
-
-- PyQt6  
-- OpenCV  
-- PyQtGraph  
-- NumPy  
-- Matplotlib  
-
-
-## ⚠️ Disclaimer
-
-### 📌 Application Disclaimer
-
-This software is provided **for educational and non-commercial use only**. It is **not intended for production**, security-sensitive, or high-performance environments without further development and testing.
-
-The dashboard offers visual image editing tools using OpenCV and PyQt6. Outputs are **not guaranteed** to be optimal or error-free.
-
 
 
 ### ⚖️ Liability Disclaimer
